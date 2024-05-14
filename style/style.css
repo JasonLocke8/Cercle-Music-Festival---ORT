@@ -34,9 +34,14 @@ header div {
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
+    background-color: transparent;
 }
 
-header div figure {
+header div figure a{
+    display: flex;
+}
+
+header div figure a img{
     width: 100px;
 }
 
@@ -80,12 +85,32 @@ header div nav ul li a:hover {
     border-radius: 30px;
 }
 
+#principal {
+    background-image: url("../img/image_8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 148px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#principal div {
+    background-color: #ffffff61;
+    border-radius: 40px;
+    margin: 4px;
+}
 
+#principal div h1 {
+    font-size: 3.5rem;
+    margin: 10px;
+}
 
-
-img{
-    width: 100%;
+#principal div h2 {
+    font-size: 1.8rem;
+    margin: 8px;
 }
 
 #contacto {
