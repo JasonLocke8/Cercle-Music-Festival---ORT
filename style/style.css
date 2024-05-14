@@ -1,6 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,40 +14,57 @@ body {
     font-size: 1.3rem;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
-#navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+
+
+
+
+
+
+
+
+header {
+
     padding: 20px;
-    padding-left: 160px;
-    padding-right: 160px;
     background-color: #f2f2f2;
 }
 
-#navbar div a {
-    margin-right: 10px;
-    margin-left: 10px;
+header section {
+    justify-content: center;
+    width: 1200px;
 }
 
-#logo {
+header section figure {
     width: 100px;
-    height: 100px;
-    padding-right: 350px;
+    text-align: left;
 }
+
+header section nav {
+    
+}
+
+header section nav ul {
+    
+}
+
+header section nav ul li {
+    list-style: none;
+}
+
+header section nav ul li a {
+
+}
+
+
+
+
+
 
 img{
     width: 100%;
 }
 
 #contacto {
-    margin-right: 30px;
-    border-radius: 20%;
-    background-color: rgb(168, 168, 168);
-    padding: 10px 30px;
+    
 }
