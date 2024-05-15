@@ -85,6 +85,11 @@ header div nav ul li a:hover {
     border-radius: 30px;
 }
 
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 #principal {
     background-image: url("../img/image_8.jpg");
     background-position: center;
