@@ -16,54 +16,58 @@ body {
     font-style: normal;
 }
 
+/* Estilos generales de letras */
+
 h1 {
     font-weight: 700;
+    font-size: 50px;
 }
 
 h2 {
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 40px;
 }
+
+h3 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+p {
+    font-size: 21px;
+}
+
+/* Header */
 
 header {
-    padding: 20px;
-    background-color: #f2f2f2;
-}
-
-header div {
     display: flex;
-    justify-content: space-between;
     width: 1200px;
+    justify-content: space-between;
     margin: 0 auto;
-    background-color: transparent;
+    align-items: center;
+    padding: 15px 0;
 }
 
-header div figure a{
-    display: flex;
+header figure img {
+    width: 100px;
 }
 
 header div figure a img{
     width: 100px;
 }
 
-header div nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header div nav ul {
-    padding: 2px;
+header nav ul {
+    padding: 3px;
     display: flex;
     list-style: none;
     justify-content: center;
 }
 
-header div nav ul li {
-    width: 150px;
-    margin: 10px;
+header nav ul li {
+    margin-left: 10px;
 }
 
-header div nav ul li a {
+header nav ul li a {
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -74,50 +78,120 @@ header div nav ul li a {
     padding: 5px 10px;
 }
 
-header div nav ul li a:hover {
+header nav ul li a:hover {
     background-color: #9cc4ff;
     color: #000000;
     border-radius: 30px;
 }
 
 #contacto {
-    background-color: #8d8d8d;
+    background-color: #8d8d8d89;
     border-radius: 30px;
 }
 
-main {
+/* Main */
+
+main section{
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#principal {
+main section h2{
+    margin: 20px;
+    width: 100%;
+}
+
+/* Div Principal */
+
+#divPrincipal {
     background-image: url("../img/image_8.jpg");
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 148px);
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
 }
 
-#principal div {
+#divPrincipal h1 {
     background-color: #ffffff61;
-    border-radius: 40px;
+    border-radius: 45px;
     margin: 4px;
+    padding: 10px;
 }
 
-#principal div h1 {
-    font-size: 3.5rem;
-    margin: 10px;
+#divPrincipal p {
+    background-color: #ffffff61;
+    border-radius: 45px;
+    margin: 4px;
+    padding: 10px;
 }
 
-#principal div h2 {
-    font-size: 1.8rem;
-    margin: 8px;
+/* Section Noticias */
+
+#secNoticias article{
+    width: 380px;
 }
 
-#contacto {
+#secNoticias article h3{
+    padding: 8px 0px;
+    text-align: left;
+}
+#secNoticias article p{
+    padding: 0px;
+    text-align: left;
+}
+
+#secNoticias button{
+    background-color: #8d8d8d89;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#secNoticias div{
+    width: 100%;
+}
+
+#secNoticias article figure span{
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    letter-spacing: 3px;
+    padding: 3px;
+    display: block;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    left: 300px;
+    top: 243px;
+    border-radius: 10px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+main section article figure img{
+    width: 100%;
+}
+
+/* Section Grilla */
+
+#secGrilla article{
+    width: 380px;
+}
+
+#secGrilla article figure img{
+    width: 300px;
+    height: 200px;
+    border-radius: 100px 0px 100px 0px;
     
 }
+
+
