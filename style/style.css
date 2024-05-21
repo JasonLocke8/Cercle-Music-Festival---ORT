@@ -25,7 +25,7 @@ body {
     justify-content: space-between;
 }
 
-main section article figure img{
+img{
     width: 100%;
 }
 
@@ -52,7 +52,7 @@ p {
 
 /* Header */
 
-header {
+header{
     display: flex;
     width: 1200px;
     justify-content: space-between;
@@ -93,12 +93,16 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: #9cc4ff;
-    color: #000000;
     border-radius: 30px;
 }
 
 #contacto {
     background-color: #8d8d8d89;
+    border-radius: 30px;
+}
+
+#contacto:hover {
+    background-color: #9cc4ff;
     border-radius: 30px;
 }
 
@@ -164,6 +168,11 @@ main section h2{
     font-weight: bold;
 }
 
+#secNoticias div button:hover {
+    background-color: #9cc4ff;
+    border-radius: 30px;
+}
+
 #secNoticias div div{
     width: 100%;
 }
@@ -212,14 +221,14 @@ main section h2{
     object-position: 1px -15px;
 }
 
-#secGrilla div article table, td{
+#secGrilla div table, td{
     text-align: left;
     border-spacing: 10px;
     border-collapse: separate;
     width: auto;
 }
 
-#secGrilla div article td {
+#secGrilla div td {
     padding: 6px;
     border: 3px solid #8d8d8d89;
 }
@@ -227,6 +236,58 @@ main section h2{
 #secGrilla div article p{
     letter-spacing: 2px;
     padding-bottom: 5px;
+}
+
+/* Section Entradas */
+
+#secEntradas div article{
+    width: 25%;
+}
+
+#secEntradas div figure{
+    width: 50%;
+}
+
+#secEntradas div article figure img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#secEntradas div article figure img:hover {
+    transform: scale(1.1);
+}
+
+#secEntradas div article ul{
+    padding: 0px 10%;
+}
+
+#secEntradas div article div{
+    height: 100px;
+}
+
+#secEntradas div article div button{
+    background-color: #8d8d8d89;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#secEntradas div article div button:hover {
+    background-color: #9cc4ff;
+    border-radius: 30px;
+}
+
+#secEntradas div article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Section Galeria */
@@ -244,7 +305,7 @@ main section h2{
 #grilla{
     display: grid;
     grid-template-columns: 2fr repeat(2, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: 200px 150px 300px;
     justify-content: center;
     gap: 10px;
     grid-template-areas:"uno    dos tres"
@@ -277,3 +338,79 @@ main section h2{
     grid-area: cinco;
 }
 
+#secGaleria{
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer section div{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#footerForm div h2{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#footerForm div form{
+    display: flex;
+    width: 80%;
+}
+
+#footerForm div form button{
+    width: 100%;
+}
+
+#footerForm div form div{
+    width: 30%;
+}
+
+
+
+
+
+/* footer section div h2, p{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+footer section div form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#footerForm div form{
+    display: flex;
+    width: 100%;
+}
+
+footer section div form div div{
+    width: 30%;
+}
+
+footer section div form button{
+    width: 100%;
+} */
+
+#footerForm{
+    background-color: #e3eeff;
+}
+
+#footerCreditos{
+    background-color: #bfd9ff;
+}
+
+#footerCreditos p{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
