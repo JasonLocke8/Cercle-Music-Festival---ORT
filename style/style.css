@@ -16,6 +16,19 @@ body {
     font-style: normal;
 }
 
+.displayFlex{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section article figure img{
+    width: 100%;
+}
+
 /* Estilos generales de letras */
 
 h1 {
@@ -91,15 +104,6 @@ header nav ul li a:hover {
 
 /* Main */
 
-main section{
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 main section h2{
     margin: 20px;
     width: 100%;
@@ -135,63 +139,141 @@ main section h2{
 
 /* Section Noticias */
 
-#secNoticias article{
+#secNoticias div article{
     width: 380px;
 }
 
-#secNoticias article h3{
-    padding: 8px 0px;
-    text-align: left;
-}
-#secNoticias article p{
-    padding: 0px;
+#secNoticias div article h3{
+    padding-bottom: 8px;
     text-align: left;
 }
 
-#secNoticias button{
+#secNoticias div article p{
+    padding: 0px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+#secNoticias div button{
     background-color: #8d8d8d89;
     border-radius: 30px;
     padding: 10px 20px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
 }
 
-#secNoticias div{
+#secNoticias div div{
     width: 100%;
 }
 
-#secNoticias article figure span{
+#secNoticias div article figure span{
     font-weight: bold;
     background-color: rgb(255, 0, 0);
     letter-spacing: 3px;
-    padding: 3px;
     display: block;
     width: 70px;
     text-align: center;
     position: relative;
     left: 300px;
-    top: 243px;
+    top: -50px;
     border-radius: 10px;
-}
-
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
-main section article figure img{
-    width: 100%;
 }
 
 /* Section Grilla */
 
-#secGrilla article{
-    width: 380px;
+#secGrilla{
+    background-color: #e3eeff;
+    padding-bottom: 10px;
 }
 
-#secGrilla article figure img{
+#secGrilla div article{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#secGrilla div article figure img{
     width: 300px;
     height: 200px;
     border-radius: 100px 0px 100px 0px;
+}
+
+.boris{
+    object-fit: cover;
+    object-position: 1px -55px;
+}
+
+.sven{
+    object-fit: cover;
+    object-position: 1px -15px;
+}
+
+#secGrilla div article table, td{
+    text-align: left;
+    border-spacing: 10px;
+    border-collapse: separate;
+    width: auto;
+}
+
+#secGrilla div article td {
+    padding: 6px;
+    border: 3px solid #8d8d8d89;
+}
+
+#secGrilla div article p{
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+/* Section Galeria */
+
+#secGaleria div div{
+    width: 100%;
+}
+
+#secGaleria div div figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    justify-content: center;
+    gap: 10px;
+    grid-template-areas:"uno    dos tres"
+                        "cuatro dos tres"
+                        "cuatro dos cinco";
     
 }
 
+#grillaUno{
+    grid-area: uno;
+}
+
+#grillaUno img{
+    object-position: 0px -400px;
+}
+
+#grillaDos{
+    grid-area: dos;
+}
+
+#grillaTres{
+    grid-area: tres;
+}
+
+#grillaCuatro{
+    grid-area: cuatro;
+}
+
+#grillaCinco{
+    grid-area: cinco;
+}
 
