@@ -329,37 +329,39 @@ main section h2{
 
 /* Section Contacto */
 
-#secContacto div form{
-    width: 100%;
-}
-
-#inputsContacto{
-    display: flex;
+#secContacto div{
     justify-content: center;
 }
 
-#inputsContacto div{
-    width: 300px;
-    text-align: left;
-}
-
-#secContacto div form button{
-    background-color: #8d8d8d89;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: bold;
+#secContacto div form {
     width: 900px;
-    border: 2px solid #50505089;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#inputsContacto div input, select {
-    padding: 10px;
+#secContacto div form p{
+    width: 260px;
+    text-align: left;
+    margin: 0px 20px;
+}
+
+#secContacto div form input, select{
+    width: 260px;
     border: 1px solid #8d8d8d89;
     border-radius: 4px;
     font-size: 16px;
-    width: 240px;
+    padding: 10px;
+    margin: 0px 20px;
+}
+
+#secContacto form button{
+    background-color: #8d8d8d89;
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 880px;
+    border: 2px solid #50505089;
 }
 
 /* Footer */
