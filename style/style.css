@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/* Estilos generales + clases */
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,6 +25,25 @@ body {
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.button {
+    background-color: #8d8d8d89;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #9cc4ff;
+    border-radius: 30px;
+}
+
+.backgroundColor{
+    background-color: #e3eeff;
 }
 
 img{
@@ -50,12 +71,6 @@ p {
     font-size: 21px;
 }
 
-/* Colores de sections */
-
-#secGrilla, #secContacto{
-    background-color: #e3eeff;
-}
-
 /* Header */
 
 header{
@@ -71,10 +86,6 @@ header figure img {
     width: 100px;
 }
 
-header div figure a img{
-    width: 100px;
-}
-
 header nav ul {
     padding: 3px;
     display: flex;
@@ -87,7 +98,6 @@ header nav ul li {
 }
 
 header nav ul li a {
-    display: block;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -130,7 +140,7 @@ main section h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
 }
 
 #divPrincipal h1 {
@@ -164,21 +174,6 @@ main section h2{
     letter-spacing: 2px;
 }
 
-#secNoticias div button{
-    background-color: #8d8d8d89;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#secNoticias div button:hover {
-    background-color: #9cc4ff;
-    border-radius: 30px;
-}
-
 #secNoticias div div{
     width: 100%;
 }
@@ -199,7 +194,7 @@ main section h2{
 /* Section Grilla */
 
 #secGrilla{
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 #secGrilla div article{
@@ -273,21 +268,6 @@ main section h2{
     height: 100px;
 }
 
-#secEntradas div article div button{
-    background-color: #8d8d8d89;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#secEntradas div article div button:hover {
-    background-color: #9cc4ff;
-    border-radius: 30px;
-}
-
 #secEntradas div article{
     display: flex;
     flex-direction: column;
@@ -298,7 +278,7 @@ main section h2{
 /* Section Galeria */
 
 #secGaleria{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 #secGaleria div div{
@@ -350,34 +330,36 @@ main section h2{
 /* Section Contacto */
 
 #secContacto div form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#secContacto div form{
-    width: 80%;
+    width: 100%;
 }
 
 #inputsContacto{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #inputsContacto div{
-    width: 350px;
+    width: 300px;
     text-align: left;
 }
 
 #secContacto div form button{
-    background-color: #2c2c2c89;
+    background-color: #8d8d8d89;
     padding: 10px 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
-    width: 100%;
+    width: 900px;
+    border: 2px solid #50505089;
+}
 
+#inputsContacto div input, select {
+    padding: 10px;
+    border: 1px solid #8d8d8d89;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 240px;
 }
 
 /* Footer */
@@ -385,24 +367,4 @@ main section h2{
 footer {
     background-color: #8d8d8d89;
     text-align: center;
-}
-
-
-
-
-
-
-
-
-
-#hola{
-    background-color: blue;
-}
-
-#hola2{
-    background-color: red;
-}
-
-#hola3{
-    background-color: green;
 }

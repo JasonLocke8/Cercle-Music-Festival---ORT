@@ -6,8 +6,8 @@
     <!-- Etiquetas META Relevantes -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descripcion de la pagina">
-    <meta name="keywords" content="Palabras, clave, separadas, por, coma">
+    <meta name="description" content="Vive dos días de experiencias inmersivas de música electrónica en un sitio icónico de la aviación: el Museo del Aire y del Espacio de Francia. Únete a Cercle para la segunda edición de su festival en mayo.">
+    <meta name="keywords" content="cercle, festival, musica, dj, ecosistema, experiencias, eventos, temas, artistas">
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/png">
     <!-- Enlace a CSS -->
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vwt1ufh.css">
 
 </head>
+
 <body>
     
     <header>
@@ -25,11 +26,11 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Grilla</a></li>
-                <li><a href="#">Entradas</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#" id="contacto">Contacto</a></li>
+                <li><a href="#secNoticias">Noticias</a></li>
+                <li><a href="#secGrilla">Grilla</a></li>
+                <li><a href="#secEntradas">Entradas</a></li>
+                <li><a href="#secGaleria">Galería</a></li>
+                <li><a href="#secContacto" id="contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -83,14 +84,14 @@
                 </article>            
 
                 <div>
-                    <button type="button">VER MÁS</button>
+                    <button class="button" type="button">VER MÁS</button>
                 </div>
 
             </div>
             
         </section>
 
-        <section id="secGrilla">
+        <section class="backgroundColor" id="secGrilla">
 
             <div class="displayFlex">
 
@@ -191,9 +192,8 @@
                         </ul>
                     </div>
                     
-
                     <div>
-                        <button type="button">COMPRAR</button>
+                        <button class="button" type="button">COMPRAR</button>
                     </div>
 
                 </article>
@@ -215,7 +215,7 @@
                     </div>
 
                     <div>
-                        <button type="button">COMPRAR</button>
+                        <button class="button" type="button">COMPRAR</button>
                     </div>
 
                 </article>
@@ -256,53 +256,13 @@
             
         </section>
 
-        <section id="secContacto">
+        <section class="backgroundColor" id="secContacto">
 
             <div class="displayFlex">
 
                 <h2>Contacto</h2>
         
                 <form>
-                    
-                    <div id="inputsContacto">
-
-                        <div id="hola">
-                            HOLA
-                        </div>
-                            
-                        <div id="hola2">
-                            HOLA2
-                        </div>
-            
-                        <div id="hola3">
-                        
-                            HOLA3
-            
-                        </div>
-
-                    </div>
-                    
-                    <button type="submit">Enviar</button>
-            
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>Sitio realizado por Nicolás González</p>
-
-    </footer>
-
-</body>
-</html>
-
-<!--
-    <form>
                     
                     <div id="inputsContacto">
 
@@ -331,6 +291,19 @@
                     
                     <button type="submit">Enviar</button>
             
-                </form> 
+                </form>
 
- -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Sitio realizado por Nicolás González</p>
+
+    </footer>
+
+</body>
+</html>
